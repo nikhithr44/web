@@ -1,0 +1,206 @@
+@import women.css
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'roboto',sana-serif;
+}
+.navbar{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:150px;
+    background: #f5f5f5;
+    z-index:9;
+    }
+    .nav{
+        padding:10px 10vw;
+        display:flex;
+        justify-content: space-between;
+    }
+    .brand-logo{
+height: 80px;
+clip-path: circle(50%);
+    }
+    .nav-items{
+        display: flex;
+        align-items: center;
+    }
+    .search{
+        width: 500px;
+        display:flex;
+
+    }
+    .search-box{
+        width:80%;
+        height:20px;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border:1px solid black;
+        text-transform: capitalize;
+        background: none;
+        color: #a9a9a9;
+        outline:none;
+    }
+    .search-btn{
+        width: 15%;
+        height: 42px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #ffffff;
+        border: 1px solid black;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .search-box::placeholder{
+        color: #a9a9a9;
+    }
+    .nav-items a{
+margin-left: 20px;
+    }
+    .nav-items a img{
+        width: 30px;
+        
+    }
+    .search-img{
+        display:flex;
+        justify-content: center;
+    }
+    .links-container {
+        width: 100%;
+        display: flex;
+        padding: 10px 10vw;
+        justify-content: center;
+        list-style: none;
+        border-top:1px solid #d1d1d1;  
+    }
+    .link{
+        text-transform: capitalize;
+        padding: 0 10px;
+        margin: 0 5px;
+        text-decoration: none;
+        color: #080214;
+        opacity: 0.5;
+        transition: .5s;
+        font-weight: 100;
+    }
+    .link:hover{
+        opacity: 1;
+    }
+    .hero-section{
+        width: 100%;
+        height:100px;
+        background-image: url('file:///C:/Users/Nikhith.R/Pictures/2021-12/IMG_20211224_063558.jpg');
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product{
+        position: relative;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    .product-category{
+        padding: 0 10vw;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 40px ;
+        text-transform: capitalize;
+    }
+    .product-container{
+        padding: 0 10vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .product-container::-webkit-scrollbar{
+        display: none;
+    }
+    .product-card{
+        flex:0 0 auto;
+        width:250px;
+        height: 450px;
+        margin-right: 40px;
+    }
+    .product-image{
+        position: relative;
+        width:100%;
+        overflow:hidden;
+    }
+    .product-thumb{
+        width:100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .discount-tag{
+        position: absolute;
+        background: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        color:#ff7d7d;
+        right: 10px;
+        top: 10px;
+        text-transform: capitalize;
+    }
+    .card-btn{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:90%;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        background: #fff;
+        border-radius: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .product-card:hover .card-btn{
+    opacity: 1;
+    }
+    .card-btn:hover{
+        background: #616fbb;
+    }
+    .product-info{
+        width: 100%;
+        height: 100px;
+        padding-top: 10px;
+    }
+    .product-brand{
+    text-transform: uppercase;
+    }
+    .product-short-des{
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        opacity: 0.5;
+        text-transform: capitalize;
+    }
+    .price{
+        position: absolute;
+        bottom: 70px;
+        left: 25%;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .actual-price{
+        position: absolute;
+        bottom: 70px ;
+        left:26.5%;
+        margin-left: 20px;
+        opacity: 0.5;
+        text-decoration: line-through;
+    }
+    
+    
